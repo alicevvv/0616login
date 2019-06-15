@@ -1,0 +1,79 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000 url('/img/alley2.jpg') center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+input {
+    border-radius: 0.1em;
+    border: #81aea9 0.3em solid;
+}
+
+input[type="password"] {
+    color: rgb(34, 53, 66);
+}
+
+input[type="email"] {
+    color: rgb(34, 53, 66);
+}
+
+button {
+    background-color: #81aea9;
+    padding: 0.3em 0.8em;
+    border: none;
+    border-radius: 0.1em;
+}
+
+.container {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    width: 50%;
+    margin: 1em;
+    padding: 2em;
+    background: rgba(75, 101, 118, 0.6) center center fixed no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.right {
+    width: 50%;
+    margin: 1em 1em;
+    padding: 2em;
+    background: rgba(75, 101, 118, 0.6) center center fixed no-repeat;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns {
+    color: rgb(34, 53, 66);
+}
+
+@media(max-width:375px) {
+    .left {
+        width: 90%;
+        padding: 1em;
+        margin: 1em 1em 0em 1em;
+    }
+    .right {
+        width: 90%;
+        margin: 0em 1em 1em 1em;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
